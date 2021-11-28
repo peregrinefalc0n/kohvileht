@@ -15,7 +15,7 @@
     font-size: 35px;
     text-align: center;
     color: rgb(254, 255, 205);
-    background-image: url("images/beans.jfif");
+    background-image: url("../images/beans.jfif");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -47,6 +47,7 @@
      background-color: white;
      padding: 20px;
      margin-top: 20px;
+     text-align: justify;
   }
   
   /* Clear floats after the columns */
