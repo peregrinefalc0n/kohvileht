@@ -4,7 +4,9 @@
 <head>
     <meta charset="utf-8">
     <title>Kohviubade töötlus</title>
+    <link rel="stylesheet" href="style/index.css">
     <link rel="stylesheet" href="style/stylesheet.css">
+    <script src=”../scripts/index.js”></script>
 </head>
 
 <body>
@@ -22,29 +24,62 @@
                     <a class="navbutton" href="joogid.html">KOHVIJOOGID </a>
                 </nav>
             </div>
-            
-            <div class="contentbar"> 
+
+            <div class="contentbar">
 
                 <div class="titlecard">
+                    <h2>
+                        Tere tulemast kohviubade imelisse maailma!
+                    </h2>
+                    <p>
+                        Siit lehelt leiad kõik vajaliku info kohviubade teekonnast, puu otsast kruusi sisse.
+                    </p>
                 </div>
 
                 <div class="topic">
+                    <h1>Pilte kohviubadest</h1>
+                    <!-- The grid: four columns -->
+                    <div class="picrow">
+                        <div class="piccolumn">
+                            <img src="images/bean1.jpg" alt="Uba üks" onclick="myFunction(this);">
+                        </div>
+                        <div class="piccolumn">
+                            <img src="images/bean2.jpg" alt="Uba kaks" onclick="myFunction(this);">
+                        </div>
+                        <div class="piccolumn">
+                            <img src="images/bean3.jpg" alt="Uba kolm" onclick="myFunction(this);">
+                        </div>
+                        <div class="piccolumn">
+                            <img src="images/bean4.png" alt="Uba neli" onclick="myFunction(this);">
+                        </div>
+                    </div>
+
+                    <!-- The expanding image container -->
+                    <div class="piccontainer">
+                        <!-- Close the image -->
+                        <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+
+                        <!-- Expanded image -->
+                        <img src="images/bean1.jpg" id="expandedImg" style="width:100%" alt="Valitud pildi suurem versioon">
+
+                        <!-- Image text -->
+                        <div id="imgtext"></div>
+                    </div>
                 </div>
 
                 <div class="topic">
+                    <h2>
+                        Aga mis asi on kohviuba, te küsite?
+                    </h2>
+                    <p>
+                        Kohviuba on kohvipuu seeme, kivi, mis on punase kohvipuu vilja sees. Viljad, kohvimarjad,
+                        sisaldavad tavaliselt kaks seemet, mille lamedad küljed on üksteise vastas. Kohviubades on
+                        0,8–2,5% kofeiini, mis on ka üks peamisi põhjuseid, miks seda taime kasvatatakse. Kohvioad on
+                        mitme maa väga tähtis ekspordiartikkel.
+                    </p>
                 </div>
-
-                <div class="topic">
-                </div>
-
-                <div class="topic">
-                </div>
-                
             </div>
 
-        </div>
-        <div class="footer">
-            Siin on footer pask
         </div>
     </main>
 </body>
